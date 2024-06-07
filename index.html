@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="font-5/css/all.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Task Tracker</title>
+  </head>
+  <body>
+    <div class="contianer">
+      <section class="task-header">
+        <div class="wraper">
+          <div class="flex1-task">
+            <div class="col1-task">
+              <div class="task-date"> fri, 25 may 2024 </div>
+              <div class="task-time"> 11 : 00 am </div>
+            </div>
+            <div class="col2-task" id="clear-btn"> Clear task </div>
+          </div>
+          <div class="flex2-task">
+            <h1>Task Tracker</h1>
+            <p class="task-total">12 Task</p>
+            <div class="task-icon">
+              <i class="fas fa-plus"></i>
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+
+          <div class="flex3-task">
+            <form action="#">
+              <input type="date" name="date" id="task-calendar" />
+              <input
+                type="text"
+                name="text"
+                id="text-input"
+                placeholder="please add task..."
+              />
+              <button type="submit" class="task-btn">Add Task</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="task-index">
+        <div class="tasks">
+          <div class="wraper-2">
+            <!-- <div class="main-index">
+              <div class="task-content">
+                <p id="task-index-date"> 2021-07-03 </p>
+                <span class="task-index">1</span>
+                <div class="task-text">big big things</div>
+              </div>
+              <div class="task-index-icon">
+                <i class="fas fa-check"></i>
+                <i class="fas fa-edit"></i>
+                <i class="fas fa-trash-alt"></i>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- =======popup confirm /modal box==== -->
+
+    <div class="confirm-modal close-modal">
+      <div class="confirm-box">
+        <div class="confirm-header">
+          <span class="tittle">Delete this Task</span>
+          <button class="modal-btn">&times</button>
+        </div>
+        <div class="confirm-content"> You are about to delete this task </div>
+
+        <div class="modal-buttons">
+          <button class="modalBtn accept">Ok</button>
+          <button class="modalBtn cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="date.js"></script>
+    <script src="confirm.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

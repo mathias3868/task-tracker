@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+html body p {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+html body .contianer {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.task-header {
+  background: url(./images/background-5.png) no-repeat center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+  padding: 20px;
+}
+.task-header .wraper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.task-header .wraper > * {
+  margin-bottom: 20px;
+}
+.task-header .wraper .flex1-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-header .wraper .flex1-task .task-date {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+.task-header .wraper .flex1-task .col2-task {
+  padding: 10px;
+  background: red;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.task-header .wraper .flex2-task h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.task-header .wraper .flex2-task p {
+  font-size: 1rem;
+  padding: 5px;
+  background: peru;
+  border-radius: 3px;
+  display: inline-block;
+}
+.task-header .wraper .flex2-task .task-icon {
+  position: absolute;
+  right: 19%;
+  bottom: 69%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: 0.1s;
+}
+.task-header .wraper .flex2-task .task-icon:hover {
+  font-size: 1.8rem;
+}
+.task-header .wraper .flex2-task .task-icon .fa-times {
+  padding: 20px;
+  background: red;
+  border-radius: 50%;
+  display: none;
+}
+.task-header .wraper .flex2-task .task-icon .fa-plus {
+  padding: 20px;
+  background: green;
+  border-radius: 40%;
+}
+.task-header .wraper .flex3-task {
+  position: absolute;
+  top: -100%;
+  right: 10%;
+  bottom: 69%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+.task-header .wraper .flex3-task form {
+  width: 500px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+.task-header .wraper .flex3-task form > * {
+  margin-bottom: 8px;
+}
+.task-header .wraper .flex3-task form input {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+.task-header .wraper .flex3-task form .task-btn {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background: orange;
+  transition: all 0.1s;
+}
+.task-header .wraper .flex3-task form .task-btn:hover {
+  background: orangered;
+}
+
+.task-index {
+  width: 100%;
+  height: auto;
+}
+.task-index .wraper-2 {
+  max-width: 900px;
+  margin: 20px auto;
+  font-size: 1rem;
+}
+.task-index .wraper-2 > * {
+  margin-bottom: 10px;
+}
+.task-index .wraper-2 .main-index {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-left: 5px solid orange;
+  border-radius: 0 5px 5px 0;
+}
+.task-index .wraper-2 .main-index .task-content > * {
+  margin-bottom: 8px;
+}
+.task-index .wraper-2 .main-index .task-content #task-index-date {
+  font-size: 1rem;
+  background: orange;
+  padding: 5px;
+  border-radius: 3px;
+}
+.task-index .wraper-2 .main-index .task-content .task-index {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+  background: purple;
+}
+.task-index .wraper-2 .main-index .task-content .task-text {
+  display: inline-block;
+  font-size: 1.3rem;
+}
+.task-index .wraper-2 .main-index .task-index-icon > * {
+  font-size: 1.3rem;
+  font-weight: 400px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.task-index .wraper-2 .main-index .fa-check {
+  color: green;
+}
+.task-index .wraper-2 .main-index .fa-edit {
+  color: purple;
+}
+.task-index .wraper-2 .main-index .fa-trash-alt {
+  color: red;
+}
+.task-index .wraper-2 .main-index .fa-check:hover::after,
+.task-index .wraper-2 .main-index .fa-edit:hover::after,
+.task-index .wraper-2 .main-index .fa-trash-alt:hover::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 5px;
+  position: absolute;
+  bottom: 51%;
+  left: 79.5%;
+  transform: translateX(-50%);
+  transition: all 0.1s;
+}
+.task-index .wraper-2 .main-index .fa-check:hover::after {
+  content: "completed";
+}
+.task-index .wraper-2 .main-index .fa-edit:hover::after {
+  content: "edit";
+}
+.task-index .wraper-2 .main-index .fa-trash-alt:hover::after {
+  content: "delete";
+}
+.task-index .wraper-2 .completed {
+  position: relative;
+  border-left: 5px solid green;
+}
+.task-index .wraper-2 .completed::after {
+  position: absolute;
+  content: "completed";
+  right: 1rem;
+  bottom: 1rem;
+  animation: slide-in 0.5s ease-in-out;
+}
+@keyframes slide-in {
+  0% {
+    right: 5rem;
+  }
+  100% {
+    right: 1rem;
+  }
+}
+
+.confirm-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: open 0.2s forwards;
+}
+@keyframes open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1px;
+  }
+}
+.confirm-modal .confirm-box {
+  width: 100%;
+  max-width: 50rem;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(0.7);
+  font-size: 1.5rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+@keyframes open-modal {
+  to {
+    transform: scale(1);
+  }
+}
+.confirm-modal .confirm-box .confirm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2b2a2a;
+  padding: 16px 18px;
+  color: #fff;
+}
+.confirm-modal .confirm-box .confirm-header .title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.confirm-modal .confirm-box .confirm-header .modal-btn {
+  font-size: 2.6rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.confirm-modal .confirm-box .confirm-header .modal-btn:hover {
+  color: red;
+}
+.confirm-modal .confirm-box .confirm-content {
+  padding: 16px 18px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.confirm-modal .confirm-box .modal-buttons {
+  display: flex;
+  background: #ccc;
+  justify-content: flex-end;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 16px 18px;
+}
+.confirm-modal .confirm-box .modal-buttons .modalBtn {
+  padding: 10px 16px;
+  border: 2px solid #3132c7;
+  font-size: 1.6rem;
+  outline: none;
+  font-weight: 500;
+  color: #3132c7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.confirm-modal .confirm-box .modal-buttons .accept {
+  background: #3132c7;
+  color: #fff;
+}
+
+.close-modal {
+  display: none;
+}/*# sourceMappingURL=index.css.map */
